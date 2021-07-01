@@ -50,7 +50,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <div class="ic-bag ic-bag-mobile cursor" onclick="location.href='class_shoppingStep01.html';"></div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="d-flex ms-auto">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -67,12 +67,12 @@
                                 <a class="nav-link" href="registration_step.html">報名須知</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">聯絡我們</a>
+                                <a class="nav-link" href="contactus.html">聯絡我們</a>
                             </li>
                         </ul>
-                        <div class="ic-bag cursor" onclick="location.href='class_shoppingStep01.html';"></div>
                     </div>
                 </div>
+                <div class="ic-bag ic-bag-pc cursor" onclick="location.href='class_shoppingStep01.html';"></div>
             </div>
         </nav>
     </div>
@@ -163,145 +163,402 @@
                 </div>
             </div>
             <div class="row mx-1 border rounded justify-content-center py-5">
-                <div class="col-10">
+                <div class="col-lg-10 col-sm-11">
                     <h5>基本資料</h5>
                 </div>
-                <div class="col-lg-5 col-10 py-2">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="中文姓名*">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="英文姓氏*">
-                </div>
-                <div class="col-lg-5 col-10 text-center py-2">
-                    <input class="form-control mb-3" type="file" id="formFile">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="英文名字*">
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <p class="text-dray-600 text-start py-2">※建議與護照拼音相同</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-10 py-2">
-                    <div class="border rounded p-4">
-                        <fieldset class="row mb-2">
-                            <legend class="col-form-label col-sm-2 pt-0">國籍*</legend>
-                            <div class="col-10 d-flex">
-                                <div class="form-check me-3">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                        value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        本國籍
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                        value="option2">
-                                    <label class="form-check-label" for="gridRadios2">外國籍
-                                    </label>
+                <!--pc-->
+                <div class="col-10 table-pc">
+                    <div class="row">
+                        <div class="col-6 pt-2">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    中文姓名<span>*</span>
                                 </div>
                             </div>
-                        </fieldset>
-                        <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="身分證字號">
-                        <!--外國籍-->
-                        <!-- <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    英文姓氏<span>*</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 text-center pt-2">
+                            <div class="x-form-item filediv">
+                                <button id="filebtn">瀏覽</button>
+                                <input id="filetxt" type="text" value="照片上傳" />
+                                <input id='file' type="file" name="file" onfocus="this.blur()"
+                                    class="x-form-text x-form-field inputtext {required:true}" />
+                            </div>
+                            <!-- <input class="form-control mb-3" type="file" id="formFile"> -->
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    英文名字<span>*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <p class="text-dray-600 text-start py-2">※建議與護照拼音相同</p>
+                            </div>
+                        </div>
+                        <div class="col-6 py-2">
+                            <div class="border rounded p-4">
+                                <fieldset class="row mb-2">
+                                    <legend class="col-form-label col-lg-3 col-sm-3 pt-0">國籍<span
+                                            class="text-red">*</span>
+                                    </legend>
+                                    <div class="col-lg-9 col-sm-9 d-flex">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                本國籍
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">外國籍
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                    placeholder="身分證字號">
+                                <!--外國籍-->
+                                <!-- <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
                                 placeholder="護照號碼">
                             <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
                                 placeholder="國籍">
                             <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
                                 placeholder="居留期限"> -->
-                    </div>
-                </div>
-                <div class="col-lg-5 col-10 py-2">
-                    <div class="border rounded p-4">
-                        <fieldset class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">性別*</legend>
-                            <div class="col-10 d-flex">
-                                <div class="form-check me-3">
-                                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1"
-                                        value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        男
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios2"
-                                        value="option2">
-                                    <label class="form-check-label" for="gridRadios2">女
-                                    </label>
+                            </div>
+                        </div>
+                        <div class="col-6 py-2">
+                            <div class="border rounded p-4">
+                                <fieldset class="row">
+                                    <legend class="col-form-label col-lg-3 col-sm-3 pt-0">性別<span
+                                            class="text-red">*</span></legend>
+                                    <div class="col-lg-9 col-sm-9 d-flex">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="gridRadios1"
+                                                id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                男
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios1"
+                                                id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">女
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="input-placeholder mt-2">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    連絡電話<span>*</span>
                                 </div>
                             </div>
-                        </fieldset>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-6 py-2">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>出生年份</option>
+                                        <option value="1">1992</option>
+                                        <option value="2">1991</option>
+                                        <option value="3">1990</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>月</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="1">04</option>
+                                        <option value="2">05</option>
+                                        <option value="3">06</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>日</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="1">04</option>
+                                        <option value="2">05</option>
+                                        <option value="3">06</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>請選擇 - 最高學歷</option>
+                                <option value="1">博士</option>
+                                <option value="2">碩士</option>
+                                <option value="3">學士</option>
+                                <option value="3">專科</option>
+                                <option value="3">高中</option>
+                                <option value="3">國小</option>
+                            </select>
+                        </div>
+                        <div class="col-6 text-center py-2">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    Email<span>*</span>
+                                </div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>請選擇 - 職業</option>
+                                <option value="1">內勤人員</option>
+                                <option value="2">外勤人員</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-10 col-sm-11 pt-4 py-3">
+                            <h5>緊急聯絡人</h5>
+                            <p>※報名中學生課程者，為使相關課程訊息不致漏失，惠請留下家長的電子郵件信箱，以便訊息的傳遞，謝謝。</p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    姓名<span>*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    關係
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    電話
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    Email<span>*</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="連絡電話*">
                 </div>
-                <div class="w-100"></div>
-                <div class="col-lg-5 col-10 py-2">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>出生年份</option>
-                                <option value="1">1992</option>
-                                <option value="2">1991</option>
-                                <option value="3">1990</option>
-                            </select>
+                <!--mobile-->
+                <div class="col-11 table-mobile">
+                    <div class="row">
+                        <div class="col-12 pt-2">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    中文姓名<span>*</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>月</option>
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                                <option value="1">04</option>
-                                <option value="2">05</option>
-                                <option value="3">06</option>
-                            </select>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    英文姓<span>*</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>日</option>
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                                <option value="1">04</option>
-                                <option value="2">05</option>
-                                <option value="3">06</option>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    英文名<span>*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-sm-11">
+                                <p class="text-dray-600 text-start py-2">※建議與護照拼音相同</p>
+                            </div>
+                        </div>
+                        <div class="col-12 py-2">
+                            <div class="border rounded p-4">
+                                <fieldset class="row mb-2">
+                                    <legend class="col-form-label col-lg-2 col-sm-3 pt-0">國籍<span
+                                            class="text-red">*</span>
+                                    </legend>
+                                    <div class="col-lg-10 col-sm-9 d-flex">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                本國籍
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">外國籍
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                    placeholder="身分證字號">
+                                <!--外國籍-->
+                                <!-- <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                placeholder="護照號碼">
+                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                placeholder="國籍">
+                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                placeholder="居留期限"> -->
+                            </div>
+                        </div>
+                        <div class="col-12 py-2">
+                            <div class="border rounded p-4">
+                                <fieldset class="row">
+                                    <legend class="col-form-label col-lg-2 col-sm-3 pt-0">性別<span
+                                            class="text-red">*</span>
+                                    </legend>
+                                    <div class="col-lg-10 col-sm-9 d-flex">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="gridRadios1"
+                                                id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                男
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios1"
+                                                id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">女
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-12 pt-2">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>出生年份</option>
+                                        <option value="1">1992</option>
+                                        <option value="2">1991</option>
+                                        <option value="3">1990</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>月</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="1">04</option>
+                                        <option value="2">05</option>
+                                        <option value="3">06</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>日</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="1">04</option>
+                                        <option value="2">05</option>
+                                        <option value="3">06</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    連絡電話<span>*</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    Email<span>*</span>
+                                </div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>請選擇 - 最高學歷</option>
+                                <option value="1">博士</option>
+                                <option value="2">碩士</option>
+                                <option value="3">學士</option>
+                                <option value="3">專科</option>
+                                <option value="3">高中</option>
+                                <option value="3">國小</option>
                             </select>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>請選擇 - 職業</option>
+                                <option value="1">內勤人員</option>
+                                <option value="2">外勤人員</option>
+                            </select>
+                            <div class="x-form-item filediv">
+                                <button id="filebtn">瀏覽</button>
+                                <input id="filetxt" type="text" value="照片上傳" />
+                                <input id='file' type="file" name="file" onfocus="this.blur()"
+                                    class="x-form-text x-form-field inputtext {required:true}" />
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-sm-11 pt-4 py-3">
+                            <h5>緊急聯絡人</h5>
+                            <p>※報名中學生課程者，為使相關課程訊息不致漏失，惠請留下家長的電子郵件信箱，以便訊息的傳遞，謝謝。</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    姓名<span>*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    關係
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    電話
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="input-placeholder">
+                                <input type="text" required>
+                                <div class="placeholder">
+                                    Email<span>*</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>請選擇 - 最高學歷</option>
-                        <option value="1">博士</option>
-                        <option value="2">碩士</option>
-                        <option value="3">學士</option>
-                        <option value="3">專科</option>
-                        <option value="3">高中</option>
-                        <option value="3">國小</option>
-                    </select>
-                </div>
-                <div class="col-lg-5 col-10 text-center py-2">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Email*">
-                    <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>請選擇 - 職業</option>
-                        <option value="1">內勤人員</option>
-                        <option value="2">外勤人員</option>
-                    </select>
-                </div>
-                <div class="col-10 pt-4 py-3">
-                    <h5>緊急聯絡人</h5>
-                    <p>※報名中學生課程者，為使相關課程訊息不致漏失，惠請留下家長的電子郵件信箱，以便訊息的傳遞，謝謝。</p>
-                </div>
-                <div class="col-lg-5 col-10 text-center">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="姓名*">
-                </div>
-                <div class="col-lg-5 col-10 text-center">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="關係">
-                </div>
-                <div class="col-lg-5 col-10 text-center">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="電話">
-                </div>
-                <div class="col-lg-5 col-10 text-center">
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Email*">
                 </div>
             </div>
-
             <div class="row mt-5">
                 <div class="col-12 text-center py-4">
                     <h3>付款方式</h3>
@@ -312,7 +569,7 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                                 checked>
                             <label class="form-check-label" for="flexRadioDefault1">
-                                線上刷卡
+                                <span class="font-18 text-red">線上刷卡</span>
                             </label>
                         </div>
                         <div class="form-check">
@@ -389,6 +646,7 @@
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+
 </script>
 
 </html>

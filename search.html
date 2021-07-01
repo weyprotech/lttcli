@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/css/style.css" rel="stylesheet">
+
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -13,7 +13,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <link href="public/css/style.css" rel="stylesheet">
     <title>LTCC</title>
 </head>
 
@@ -50,12 +59,12 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <div class="ic-bag ic-bag-mobile cursor" onclick="location.href='class_shoppingStep01.html';"></div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="d-flex ms-auto">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" href="search.html">課程介紹</a>
+                                <a class="nav-link" href="search.html">課程介紹</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="test.html">編班測驗</a>
@@ -67,223 +76,264 @@
                                 <a class="nav-link" href="registration_step.html">報名須知</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">聯絡我們</a>
+                                <a class="nav-link" href="contactus.html">聯絡我們</a>
                             </li>
                         </ul>
-                        <div class="ic-bag cursor" onclick="location.href='class_shoppingStep01.html';"></div>
                     </div>
                 </div>
+                <div class="ic-bag ic-bag-pc cursor" onclick="location.href='class_shoppingStep01.html';"></div>
             </div>
         </nav>
     </div>
 
-    <div class="nav-mt">
-        <!--ad banner-->
+    <!--ad banner-->
+    <!-- <div class="container-fluid bg-light ad-banner">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-5 col-11">
+                <img src="public/images/ad-1.png" class="img-fluid">
+            </div>
+            <div class="col-lg-5 col-11 mt-lg-0 mt-sm-3">
+                <img src="public/images/ad-2.png" class="img-fluid">
+            </div>
+        </div>
+    </div> -->
+    <div class="bg-light">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-12">
+            <div class="owl-carousel owl-theme" style="margin-top: 200px;">
+                <div class="item">
                     <img src="public/images/ad-1.png" class="img-fluid">
                 </div>
-                <div class="col-lg-6 col-12 mt-lg-0 mt-sm-3">
+                <div class="item">
+                    <img src="public/images/ad-2.png" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="public/images/ad-2.png" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="public/images/ad-1.png" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="public/images/ad-1.png" class="img-fluid">
+                </div>
+                <div class="item">
                     <img src="public/images/ad-2.png" class="img-fluid">
                 </div>
             </div>
         </div>
-        <!--main-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center py-4">
-                    <h3 class="py-2">課程檢索<span class="text-dray-500 h4">Course Search</span>
-                    </h3>
-                </div>
-                <div class="co1-12 box-shadow p-lg-4 p-sm-2 bg-white search-list">
-                    <ul>語言
-                        <li class="text-dray-300">英語(32)</li>
-                    </ul>
-                    <ul>程度<li>初級(2)</li>
-                        <li>中級(2)</li>
-                        <li>中高級(2)</li>
-                        <li>高級(2)</li>
-                    </ul>
-                    <ul>內容<li>會計(2)</li>
-                        <li>商業(2)</li>
-                        <li>寫作(2)</li>
-                        <li>文法(2)</li>
-                    </ul>
-                    <ul>時段<li>週間白天(2)</li>
-                        <li>週間晚上(2)</li>
-                        <li>週六白天(2)</li>
-                        <li>週六晚上(2)</li>
-                    </ul>
-                </div>
+    </div>
+    <!--main-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center py-4">
+                <h3 class="py-2">課程檢索<span class="text-dray-500 h4">Course Search</span>
+                </h3>
             </div>
-
-            <!--card-->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3 class="pt-5">檢索結果<span class="text-dray-500 h4">Search Result</span>
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card card-tag">
-                        <img src="public/images/image-01.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">英語聽力會話中級1B</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card">
-                        <img src="public/images/image-02.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">30の物語(N2/週四晚)</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card card-tag">
-                        <img src="public/images/image-03.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">英語聽力會話中級1B</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card">
-                        <img src="public/images/image-04.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">英語聽力會話中級1B</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card card-tag">
-                        <img src="public/images/image-05.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">英語聽力會話中級1B</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mt-3">
-                    <div class="card">
-                        <img src="public/images/image-06.png" class="img-fluid">
-                        <div class="card-body mx-auto">
-                            <div class="d-flex card-text">
-                                <img src="public/images/svg/ic-date.svg" class="pe-1">
-                                <p>2021/4/20</p>
-                                <img src="public/images/svg/ic-time.svg" class="px-1">
-                                <p>週二 19:25-21:10</p>
-                            </div>
-                            <h5 class="card-title">英語聽力會話中級1B</h5>
-                            <h5 class="text-primary fw-bold py-2">$2,800</h5>
-                            <a href="class_detail.html" class="btn btn-primary">招生中</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--page-->
-            <nav aria-label="Page navigation example">
-                <ul class="pagination my-5 justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&lt;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&gt;</span>
-                        </a>
-                    </li>
+            <div class="co1-12 box-shadow p-lg-4 p-sm-2 bg-white search-list">
+                <ul>語言
+                    <li class="text-dray-300">英語(32)</li>
                 </ul>
-            </nav>
-            <div class="row pb-5">
-                <div class="col-12 text-center pb-4">
-                    <h3 class="py-2">師資陣容<span class="text-dray-500 h4">Meet Our Lectures</span>
-                    </h3>
-                </div>
-                <div class="d-flex justify-content-evenly mt-5 pt-5">
-                    <img src="public/images/svg/ic-previous.svg" class="pe-5">
-                    <div class="col-lg-6 col-10">
-                        <div class="lectures-item text-center">
-                            <h3><img src="public/images/UK.png" class="pe-2">Simon老師</h3>
-                            <h5>UK | 15年 教學經驗</h5>
-                            <p>Simon老師在臺灣生活已經超過20年了。他擅長學術英語課程的規劃與教授，長期負責中研院國際研究生學程等學術寫作課程。教學風格幽默，上課氣氛輕鬆，讓學員除了獲得語言知識與學習技巧外，也會愛上英文！教學外，Simon的興趣非常特別；包括在颱風時舉辦烤肉活動，與美國人探討拼字問題，以及到人跡罕至的地方旅行。
-                            </p>
+                <ul>程度<li>初級(2)</li>
+                    <li>中級(2)</li>
+                    <li>中高級(2)</li>
+                    <li>高級(2)</li>
+                </ul>
+                <ul>內容<li>會計(2)</li>
+                    <li>商業(2)</li>
+                    <li>寫作(2)</li>
+                    <li>文法(2)</li>
+                </ul>
+                <ul>時段<li>週間白天(2)</li>
+                    <li>週間晚上(2)</li>
+                    <li>週六白天(2)</li>
+                    <li>週六晚上(2)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--card-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="pt-5">檢索結果<span class="text-dray-500 h4">Search Result</span>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card card-tag" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-01.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
                         </div>
+                        <h5 class="card-title">英語聽力會話中級1B</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
                     </div>
-                    <img src="public/images/svg/ic-next.svg" class="ps-5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-02.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
+                        </div>
+                        <h5 class="card-title">30の物語(N2/週四晚)</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card card-tag" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-03.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
+                        </div>
+                        <h5 class="card-title">英語聽力會話中級1B</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <div class="row text-white justify-content-center">
-                    <div class="col-lg-5 col-12">
-                        <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
-                            <li><a href="aboutus.html">關於我們</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="privacy.html">隱私權聲明</a></li>
-                            <li><a href="comment.html">意見箱</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-12 ms-auto text-center pe-0">
-                        © Copyright 021 財團法人語言訓練測驗中心
-                    </div>
-                    <div class="col-auto text-center px-0">FOLLOW US
-                        <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
-                        <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+        <div class="row">
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-04.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
+                        </div>
+                        <h5 class="card-title">英語聽力會話中級1B</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card card-tag" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-05.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
+                        </div>
+                        <h5 class="card-title">英語聽力會話中級1B</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-3 cursor">
+                <div class="card" onclick="location.href='class_detail.html';">
+                    <img src="public/images/image-06.png" class="img-fluid">
+                    <div class="card-body mx-auto">
+                        <div class="d-flex card-text">
+                            <img src="public/images/svg/ic-date.svg" class="pe-1">
+                            <p>2021/4/20</p>
+                            <img src="public/images/svg/ic-time.svg" class="px-1">
+                            <p>週二 19:25-21:10</p>
+                        </div>
+                        <h5 class="card-title">英語聽力會話中級1B</h5>
+                        <h5 class="text-primary fw-bold py-2">$2,800</h5>
+                        <a href="class_detail.html" class="btn btn-primary">招生中</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--page-->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination my-5 justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row pb-5">
+            <div class="col-12 text-center pb-4">
+                <h3 class="py-2">師資陣容<span class="text-dray-500 h4">Meet Our Lectures</span>
+                </h3>
+            </div>
+            <div class="d-flex justify-content-evenly mt-5 pt-5">
+                <img src="public/images/svg/ic-previous.svg" class="pe-5">
+                <div class="col-lg-6 col-10">
+                    <div class="lectures-item text-center">
+                        <h3><img src="public/images/UK.png" class="pe-2">Simon老師</h3>
+                        <h5>UK | 15年 教學經驗</h5>
+                        <p>Simon老師在臺灣生活已經超過20年了。他擅長學術英語課程的規劃與教授，長期負責中研院國際研究生學程等學術寫作課程。教學風格幽默，上課氣氛輕鬆，讓學員除了獲得語言知識與學習技巧外，也會愛上英文！教學外，Simon的興趣非常特別；包括在颱風時舉辦烤肉活動，與美國人探討拼字問題，以及到人跡罕至的地方旅行。
+                        </p>
+                    </div>
+                </div>
+                <img src="public/images/svg/ic-next.svg" class="ps-5">
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row text-white justify-content-center">
+                <div class="col-lg-5 col-12">
+                    <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
+                        <li><a href="aboutus.html">關於我們</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">隱私權聲明</a></li>
+                        <li><a href="comment.html">意見箱</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12 ms-auto text-center pe-0">
+                    © Copyright 021 財團法人語言訓練測驗中心
+                </div>
+                <div class="col-auto text-center px-0">FOLLOW US
+                    <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
+                    <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+</script>
