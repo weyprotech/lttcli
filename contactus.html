@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="public/js/augurio-collapse.js"></script>
+    <title>LTCC</title>
+</head>
+
+<body>
+    <div class="fixed-top nav-box-shadow bg-white">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="px-0 border-bottom py-1 text-dray-500 d-lg-flex justify-content-between w-100">
+                    <div class="text-lg-start text-sm-center">
+                        <img src="public/images/svg/ic-sale.svg" width="35px">
+                        <small class="cursor"><u>學費好康優惠詳情</u></small><small class="ms-4">FOLLOW US</small>
+                        <a href="#"><img src="public/images/svg/ic-fb.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig.svg" class="px-1 cursor"></a>
+                    </div>
+                    <div class="text-lg-end text-sm-center">
+                        <button type="button" class="btn btn-top btn-registered"
+                            onclick="location.href='login.html';">登入</button>
+                        <button type="button" class="btn btn-top btn-member"
+                            onclick="location.href='joinus.html';">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-text">
+                        <img src="public/images/logo.png" alt="" width="auto" height="auto" class="pe-1 pb-1">課程網
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">課程介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="test.html">編班測驗</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mechanism.html">機構委訓</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registration_step.html">報名須知</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="ic-bag cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-mt">
+        <div class="container">
+            <!--main-->
+            <div class="row">
+                <div class="col-12 pt-4 d-flex justify-content-between">
+                    <h3 class="">聯絡我們</h3>
+                    <div>全部展開 | 全部收合</div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="d-flex">
+                        <img src="public/images/svg/ic-contact-map.svg" class="me-2">
+                        <h2 class="text-orange-500">LTTC</h2>
+                    </div>
+                    <div class="py-3">
+                        <p>臺北市大安區辛亥路二段 170號（國立臺灣大學校總區語文大樓）<span class="text-primary fw-bold cursor"><u>Google
+                                    map</u></span><br>
+                            連絡電話：(02) 2362-6385 #272<br>
+                            E-mail：tra@lttc.ntu.edu.tw<br>
+                            辦公時間：週一至五 8:00~21:00</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="accordion border-top" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    捷運
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    科技大樓站 | <small class="text-dray-600">步行約 15 分鐘</small><br>
+                                    公館站 | <small class="text-dray-600">穿過臺大校園，步行約 20 分鐘</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    公車
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    復興南路口站 | <small class="text-dray-600">步行約 10 分鐘<br>國科會科技大樓前 15, 18, 207, 211, 235,
+                                        237, 278, 284, 295, 3, 52, 662, 663, 680, 72, 74, 和平幹線, 敦化幹線</small><br><br>
+                                    自來水站 |<small class="text-dray-600">穿過臺大校園，步行約 10 分鐘<br>基隆路三段，長興街口：1, 207, 254, 275,
+                                        672, 673, 905, 906, 907, 909, 935, 南軟專車, 敦化幹線, 棕12</small><br><br>
+                                    臺大綜合體育館站 |<small class="text-dray-600">沿辛亥路步行約 10 分鐘<br>新生南路辛亥路口：0南, 109, 207, 208,
+                                        236, 251, 253, 280, 284, 290, 311, 505, 52, 530, 642, 643, 668, 671, 675, 676,
+                                        907, 敦化幹線, 綠11</small><br><br>
+                                    臺大資訊大樓站 |<small class="text-dray-600">步行約 1 分鐘<br>臺大辛亥路側門：298, 懷恩專車S31, 949 </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="d-flex">
+                        <img src="public/images/svg/ic-contact-map.svg" class="me-2">
+                        <h2 class="text-orange-500">LTTC-LI新紀元</h2>
+                    </div>
+                    <div class="py-3">
+                        <p>臺北市中正區羅斯福路一段 97 號4, 5樓（近捷運中正紀念堂站3號出口，步行約5分鐘）<span
+                                class="text-primary fw-bold cursor"><u>Google
+                                    map</u></span><br>
+                            連絡電話：(02) 3322-1100 #9<br>
+                            E-mail：lttc.li@lttc.ntu.edu.tw<br>
+                            辦公時間：週一至五 8:30~21:00；週六 9:00~19:00</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="accordion border-top" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThress">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThress" aria-expanded="true"
+                                    aria-controls="collapseThress">
+                                    捷運
+                                </button>
+                            </h2>
+                            <div id="collapseThress" class="accordion-collapse collapse show"
+                                aria-labelledby="headingThress" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    科技大樓站 | <small class="text-dray-600">步行約 15 分鐘</small><br>
+                                    公館站 | <small class="text-dray-600">穿過臺大校園，步行約 20 分鐘</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    公車
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    復興南路口站 | <small class="text-dray-600">步行約 10 分鐘<br>國科會科技大樓前 15, 18, 207, 211, 235,
+                                        237, 278, 284, 295, 3, 52, 662, 663, 680, 72, 74, 和平幹線, 敦化幹線</small><br><br>
+                                    自來水站 |<small class="text-dray-600">穿過臺大校園，步行約 10 分鐘<br>基隆路三段，長興街口：1, 207, 254, 275,
+                                        672, 673, 905, 906, 907, 909, 935, 南軟專車, 敦化幹線, 棕12</small><br><br>
+                                    臺大綜合體育館站 |<small class="text-dray-600">沿辛亥路步行約 10 分鐘<br>新生南路辛亥路口：0南, 109, 207, 208,
+                                        236, 251, 253, 280, 284, 290, 311, 505, 52, 530, 642, 643, 668, 671, 675, 676,
+                                        907, 敦化幹線, 綠11</small><br><br>
+                                    臺大資訊大樓站 |<small class="text-dray-600">步行約 1 分鐘<br>臺大辛亥路側門：298, 懷恩專車S31, 949 </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row text-white justify-content-center">
+                    <div class="col-lg-5 col-12">
+                        <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
+                            <li><a href="aboutus.html">關於我們</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy.html">隱私權聲明</a></li>
+                            <li><a href="comment.html">意見箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 ms-auto text-center pe-0">
+                        © Copyright 021 財團法人語言訓練測驗中心
+                    </div>
+                    <div class="col-auto text-center px-0">FOLLOW US
+                        <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

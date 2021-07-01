@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="public/js/augurio-collapse.js"></script>
+    <title>LTCC</title>
+</head>
+
+<body>
+    <div class="fixed-top nav-box-shadow bg-white">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="px-0 border-bottom py-1 text-dray-500 d-lg-flex justify-content-between w-100">
+                    <div class="text-lg-start text-sm-center">
+                        <img src="public/images/svg/ic-sale.svg" width="35px">
+                        <small class="cursor"><u>學費好康優惠詳情</u></small><small class="ms-4">FOLLOW US</small>
+                        <a href="#"><img src="public/images/svg/ic-fb.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig.svg" class="px-1 cursor"></a>
+                    </div>
+                    <div class="text-lg-end text-sm-center">
+                        <button type="button" class="btn btn-top btn-registered"
+                            onclick="location.href='login.html';">登入</button>
+                        <button type="button" class="btn btn-top btn-member"
+                            onclick="location.href='joinus.html';">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-text">
+                        <img src="public/images/logo.png" alt="" width="auto" height="auto" class="pe-1 pb-1">課程網
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ic-bag ic-bag-mobile cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">課程介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="test.html">編班測驗</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mechanism.html">機構委訓</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registration_step.html">報名須知</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ic-bag ic-bag-pc cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-mt">
+        <div class="container">
+            <!--main-->
+            <div class="row">
+                <div class="col-12 pt-4 mb-5 d-flex justify-content-between">
+                    <h3 class="">FAQ</h3>
+                    <div>全部展開 | 全部收合</div>
+                </div>
+                <!--qa-->
+                <div class="faq">
+                    <div class="accordion border-top" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    授課對象為何？
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    中學生或年滿18歲以上者。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    何時開課？
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    英語半日密集班於單數月開課，每學期上課30天；週六班多集中在一、四、七、十月開課，每學期上課10天。此外，在單數月不定期會開設各種短期班及特別班，有興趣者可來電或上網查詢。
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    定期開設那些課程／班級？每班人數有多少？
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    目前週一至週五開設有英、日、法、西班牙語課程，依上課時數區分為英語半日密集班（每日3.5節課）、短期班（每日1或2節課），週六僅在LTTC-LI新紀元開課，班別有英、日、西班牙語課程，每週六上2.5或3節課。實際所開班級將視報名情況而定，每班人數不超過20名，本中心保留開班與否之權利。
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    報名資格
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    須年滿 18 歲以上（中學生課程除外），未滿 20 歲報名者，須法定代理人同意始可報名。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFives">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFives" aria-expanded="true" aria-controls="collapseFives">
+                                    新學員如何辦理報名、繳費？
+                                </button>
+                            </h2>
+                            <div id="collapseFives" class="accordion-collapse collapse" aria-labelledby="headingFives"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    1.請先詳閱課程資訊，並查詢欲報名班別是否仍有空額。<br>
+                                    2.報名須程度編班的課程時，可上傳免試成績證明或參加免費線上編班測驗以評定程度。<br>
+                                    3.報名後可用線上刷卡、ATM轉帳、郵局/超商繳款等方式繳費。<br>
+                                    4.學員註冊繳交學費後，即不得轉讓他人、亦不得由他人頂替上課或申請保留學費或學籍。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    曾在中心進修過，又想繼續上課，該如何辦理？
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    學員一經中斷進修後，應以新學員身份重新報名。如一年內曾在本中心進修過或參加過編班測驗，可辦理免試；若超過一年者，則須再參加線上測驗以評定程度。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                    編班有何先後順序？
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    因教室容額有限，每期以現讀學員續讀優先。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                    註冊繳費前應注意什麼？
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    繳費前應審慎考慮所編入之班級、時段是否合適，確定能上課再完成繳費。候補者可於開課前來電<span class="text-red">LTTC
+                                        (02)2362-6385分機
+                                        272</span>或<span class="text-red">LTTC-LI新紀元(02)3322-1100分機 9</span>查詢空額辦理補註冊。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                    所繳學費含教材費用嗎？如何購買教材？
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    大部分班級學費不含教材費用，各班級用書會於課程檢索的資訊區中公告，學員可於開課日自備現款於臨時書籍販賣處（限開學日起一週內）購買；遇教師自訂課程內容者，將酌收講義費用。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                    現讀學員下學期想繼續上課，該如何辦理手續？
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    我們會於學期間調查現讀學員報名下一學期課程的意願，調查表單上已註明下一期所編班名、上課時段等資訊，本中心將不再另行通知。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="true"
+                                    aria-controls="collapseEleven">
+                                    繳學費後，發現無法配合上課時間，可以申請轉班嗎？
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    1.繳學費後，因故致須更換班別者，請依下列辦法申請轉班。
+                                    轉班申請以一次為限，且限欲轉入之班級有空額且確定開班始予辦理。<br>
+                                    2.轉班費用如下：<br>
+                                    <div class="text-center">
+                                        原班級<br>
+                                        開課前第7個辦公日（含）前 原班級開課前第6個辦公日<br>至開課前1日 原班級開課第1日<br>至總授課時數10分之1前</div>
+                                    學費由多轉少 退差額，不收手續費 扣除1.手續費NT$500 　　 2.新班學費<br>差額多退少補 <br>扣除
+                                    <br>1.手續費NT$500 <br>2.已開課堂數費用 （NT$300/節）* <br>3.新班學費差額多退少補<br>
+                                    學費相同 不收手續費 另收手續費NT$500 另收 1.手續費NT$500 　　2.已開課堂數費用
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row text-white justify-content-center">
+                    <div class="col-lg-5 col-12">
+                        <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
+                            <li><a href="aboutus.html">關於我們</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy.html">隱私權聲明</a></li>
+                            <li><a href="comment.html">意見箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 ms-auto text-center pe-0">
+                        © Copyright 021 財團法人語言訓練測驗中心
+                    </div>
+                    <div class="col-auto text-center px-0">FOLLOW US
+                        <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Group_1004" data-name="Group 1004" transform="translate(-1024 -360)">
+    <g id="book" transform="translate(990.583 371)">
+      <path id="Path_1475" data-name="Path 1475" d="M74.525,302.245a6.421,6.421,0,0,0-5.7,3.449L66.459,310.2H58.895v-1.989h6.362l1.8-3.442c.1-.188.219-.359.33-.537H55.57a4.9,4.9,0,0,0-3.478,1.42l-4.675,4.2,6.348,6.349,2.5-2.02h12.6l6.263-11.937Z" transform="translate(0 -282.202)" fill="#fff"/>
+      <path id="Path_1476" data-name="Path 1476" d="M131.93,0H119a2.984,2.984,0,0,0,0,5.968H131.93Z" transform="translate(-64.049)" fill="#fff"/>
+      <path id="Path_1477" data-name="Path 1477" d="M116.015,104.617v10.039A2.987,2.987,0,0,0,119,117.64H131.93v-12H119A4.926,4.926,0,0,1,116.015,104.617Zm3.979,3.01h7.958v1.989h-7.958Z" transform="translate(-64.049 -97.679)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_91" data-name="Ellipse 91" transform="translate(1024 360)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="28" cy="28" r="28" stroke="none"/>
+      <circle cx="28" cy="28" r="27.5" fill="none"/>
+    </g>
+  </g>
+</svg>

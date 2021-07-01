@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/css/style.css" rel="stylesheet">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <title>LTCC</title>
+</head>
+
+<body>
+    <div class="fixed-top nav-box-shadow bg-white">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="px-0 border-bottom py-1 text-dray-500 d-lg-flex justify-content-between w-100">
+                    <div class="text-lg-start text-sm-center">
+                        <img src="public/images/svg/ic-sale.svg" width="35px">
+                        <small class="cursor"><u>學費好康優惠詳情</u></small><small class="ms-4">FOLLOW US</small>
+                        <a href="#"><img src="public/images/svg/ic-fb.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig.svg" class="px-1 cursor"></a>
+                    </div>
+                    <div class="text-lg-end text-sm-center">
+                        <button type="button" class="btn btn-top btn-registered"
+                            onclick="location.href='login.html';">登入</button>
+                        <button type="button" class="btn btn-top btn-member"
+                            onclick="location.href='joinus.html';">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-text">
+                        <img src="public/images/logo.png" alt="" width="auto" height="auto" class="pe-1 pb-1">課程網
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">課程介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="test.html">編班測驗</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mechanism.html">機構委訓</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registration_step.html">報名須知</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="ic-bag cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-mt">
+        <div class="container">
+            <!--step bar-->
+            <div class="row bs-wizard">
+                <div class="col-3 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum active">購物明細</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">1</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step complete">
+                    <!-- complete -->
+                    <div class="text-center bs-wizard-stepnum active">優惠折扣</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">2</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step complete">
+                    <!-- complete -->
+                    <div class="text-center bs-wizard-stepnum active">付款方式</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">3</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step complete">
+                    <!-- active -->
+                    <div class="text-center bs-wizard-stepnum active">訂購完成</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot" style="background: #0bd2c8;"><img
+                            src="public/images/svg/ic-check-mark.svg" class="ps-1"></span>
+                </div>
+            </div>
+
+            <!--main-->
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    <h3 class="pb-4 text-orange-500">訂購完成, 請儘速付款</h3>
+                    <p>訂單編號： of398767298 可至 <a href="#"><span class="text-primary"><u>學員專區</u></span></a> 查詢</p>
+                    <p>訂單通知信已寄送至 <a href="#"><span class="text-primary px-2">joyjoy@gmail.com</span></a> 請查收信件</p>
+                    <a href="index.html" class="btn btn-add mx-auto w-25 my-5">返回首頁</a>
+                </div>
+            </div>
+            <div class="row mx-1 border rounded text-dray-600">
+                <div class="col-12 d-flex text-center py-3 border-bottom">
+                    <div class="h5 w-50">課程</div>
+                    <div class="h5 w-25">報名狀態</div>
+                    <div class="h5 w-25">學費</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 border-bottom align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+
+                        <img src="public/images/image-02.png" class="h-px-100">
+                        <p>英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 border-bottom align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+
+                        <img src="public/images/image-03.png" class="h-px-100">
+                        <p>英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+
+                        <img src="public/images/image-02.png" class="h-px-100">
+                        <p>英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center py-4">
+                    <h3>付款方式</h3>
+                    <p>線上刷卡</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-10 py-4 d-flex justify-content-center border-bottom">
+                    <h3>購物車總計</h3><img src="public/images/svg/ic-shopping-bag.svg" class="ms-2">
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-4 col-10 py-3">
+                    <div class="d-flex justify-content-between py-3 border-bottom">
+                        <p>折扣金額</p>
+                        <p class="text-primary">-$200</p>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 border-bottom">
+                        <p>金額小計</p>
+                        <p>$16,640</p>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 border-bottom">
+                        <p>總價</p>
+                        <b>$16,640</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row text-white justify-content-center">
+                    <div class="col-lg-5 col-12">
+                        <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
+                            <li><a href="aboutus.html">關於我們</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy.html">隱私權聲明</a></li>
+                            <li><a href="comment.html">意見箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 ms-auto text-center pe-0">
+                        © Copyright 021 財團法人語言訓練測驗中心
+                    </div>
+                    <div class="col-auto text-center px-0">FOLLOW US
+                        <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

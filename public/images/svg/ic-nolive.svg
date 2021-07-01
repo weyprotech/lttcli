@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <g id="Group_143" data-name="Group 143" transform="translate(-1150.395 -1422.756)">
+      <g id="video-camera" transform="translate(1152 1439.579)">
+        <g id="Group_140" data-name="Group 140">
+          <g id="Group_139" data-name="Group 139">
+            <path id="Path_338" data-name="Path 338" d="M36.867,96.512H7.131C3.209,96.512,0,99.056,0,102.165v19.051c0,3.109,3.209,5.653,7.131,5.653H36.867c3.922,0,7.131-2.544,7.131-5.653V102.165C44,99,40.789,96.512,36.867,96.512Z" transform="translate(0 -96.512)" fill="#fff"/>
+          </g>
+        </g>
+        <g id="Group_142" data-name="Group 142" transform="translate(46.824 3.018)">
+          <g id="Group_141" data-name="Group 141">
+            <path id="Path_339" data-name="Path 339" d="M351.284,123.938a2.879,2.879,0,0,0-.961.4l-8.819,5.088v13.115l8.875,5.088a3.361,3.361,0,0,0,4.636-1.244,3.454,3.454,0,0,0,.452-1.7V127.217a3.4,3.4,0,0,0-4.183-3.279Z" transform="translate(-341.504 -123.847)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <text id="非同步" transform="translate(1154.614 1459.352)" fill="#0bd2c8" stroke="#0bd2c8" stroke-width="0.2" font-size="13" font-family="PingFangTC-Regular, PingFang TC"><tspan x="0" y="0">非同步</tspan></text>
+    </g>
+  </g>
+</svg>

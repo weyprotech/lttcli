@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/css/style.css" rel="stylesheet">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <title>LTCC</title>
+</head>
+
+
+<body>
+    <div class="fixed-top nav-box-shadow bg-white">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="px-0 border-bottom py-1 text-dray-500 d-lg-flex justify-content-between w-100">
+                    <div class="text-lg-start text-sm-center">
+                        <img src="public/images/svg/ic-sale.svg" width="35px">
+                        <small class="cursor"><u>學費好康優惠詳情</u></small><small class="ms-4">FOLLOW US</small>
+                        <a href="#"><img src="public/images/svg/ic-fb.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig.svg" class="px-1 cursor"></a>
+                    </div>
+                    <div class="text-lg-end text-sm-center">
+                        <button type="button" class="btn btn-top btn-registered"
+                            onclick="location.href='login.html';">登入</button>
+                        <button type="button" class="btn btn-top btn-member"
+                            onclick="location.href='joinus.html';">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-text">
+                        <img src="public/images/logo.png" alt="" width="auto" height="auto" class="pe-1 pb-1">課程網
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ic-bag ic-bag-mobile cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">課程介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="test.html">編班測驗</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mechanism.html">機構委訓</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registration_step.html">報名須知</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ic-bag ic-bag-pc cursor" onclick="location.href='class_shoppingStep01.html';"></div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-mt">
+        <div class="container">
+            <!--step bar-->
+            <div class="row bs-wizard">
+                <div class="col-3 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum active">購物明細</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">1</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step active">
+                    <!-- complete -->
+                    <div class="text-center bs-wizard-stepnum">優惠折扣</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">2</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step disabled">
+                    <!-- complete -->
+                    <div class="text-center bs-wizard-stepnum">付款方式</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot">3</span>
+                </div>
+
+                <div class="col-3 bs-wizard-step disabled">
+                    <!-- active -->
+                    <div class="text-center bs-wizard-stepnum">訂購完成</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot"><img src="public/images/svg/ic-check-mark.svg" class="ps-1"></span>
+                </div>
+            </div>
+
+            <!--main-->
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    <h3>購物清單</h3>
+                </div>
+            </div>
+            <div class="row border rounded text-dray-600 mx-1">
+                <div class="col-12 d-flex text-center py-3 border-bottom">
+                    <div class="h5 w-50">課程</div>
+                    <div class="h5 w-25">報名狀態</div>
+                    <div class="h5 w-25">學費</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 border-bottom align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                        <img src="public/images/image-02.png" class="h-px-100">
+                        <p class="cursor" onclick="location.href='class_detail.html';">英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 border-bottom align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                        <img src="public/images/image-03.png" class="h-px-100">
+                        <p class="cursor" onclick="location.href='class_detail.html';">英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+                <div class="col-12 d-flex text-center py-3 align-items-center">
+                    <div class="h5 w-50 d-flex justify-content-around align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                        <img src="public/images/image-02.png" class="h-px-100">
+                        <p class="cursor" onclick="location.href='class_detail.html';">英語進階會話討論密集B2(A)</p>
+                    </div>
+                    <div class="h5 w-25">確定開班</div>
+                    <div class="h5 w-25">$8,320</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center py-4">
+                    <h3>報名須知</h3>
+                </div>
+                <div class="row mx-1">
+                    <div class="col-12 sticky-top">
+                        <div class="d-flex justify-content-around mb-3">
+                            <h5 class="cursor"><a href="#title-one">報名須知</a></h5>
+                            <h5 class="cursor"><a href="#title-two">個資使用說明</a></h5>
+                            <h5 class="cursor"><a href="public/download/短期補習班補習服務契約書_20210624.docx"
+                                    targer="_blank">短期補習班服務契約書</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-12 overflow-auto border rounded p-3 h-px-300">
+                        <p class="text-dray-650">
+                        <h5 class="py-3" id="title-one">報名須知</h5>
+                        1.不論免試或參加編班測驗者，皆視適合班級之空額依序編班。學員繳學費前宜審慎考慮所編班級、時段是否合乎個人意願。未編入班級者可於開學前來電查詢各班別之空額，視空額辦理補註冊。<br>
+                        2.實際所開班級將視報名情況而定，每班人數不超過20名，本中心保留開班與否之權利。<br>
+                        3.繳學費後未達最低開班人數則不開班，可全額退費或視空額換班。<br>
+                        4.當期學員欲續讀次學期者請依「學員續讀註冊辦法」辦理。<br>
+                        5.一經報名繳費，即不得轉讓他人、由他人頂替上課或申請保留學費或學籍。繳學費後欲換班者請依「學員轉班辦法」辦理；欲退學費者以實際繳交之金額，並依其提出退費申請日期（郵寄者以郵戳為憑；非郵寄者以收文日期為準），照規定辦理。詳如下：於開課日前第59日至實際開課日當天課程開始前提出退費申請者，應退還當期開班約定繳納費用總額90%。但所收取之10%部分逾新臺幣一千元部分，仍應退還；於實際開課日當天課程結束後，第2日（次）上課前（不含當次）提出退費申請者，應退還當期開班約定繳納費用總額70%；於第2日（次）上課後，且未達全期或總課程時數之三分之一期間內提出退費申請者，應退還當期開班約定繳納費用總額50%；達全期或總課程時數之三分之一以上期間提出退費申請者，所收取之當期開班約定繳納費用得全數不予退還。<br>
+                        6.退費方式：<br>
+                        (1) 信用卡繳費者，採信用卡刷退方式退還學費。<br>
+                        (2) 超商、郵局、本中心臨櫃繳款及ATM轉帳繳費者，採匯款退費(必須提供帳戶影本或圖片)，收到帳戶資料後14個工作日內完成退款。
+                        7.學員因個人因素缺課恕無法補課，亦無提供上課影像及聲音重播。<br>
+                        8.成績及格且缺課時數未超過該課程總授課時數四分之一者，並發給「結業證書」。各機關公務人員得於課程結束後，申請登錄學習時數，作為終身學習之紀錄。<br>
+                        9.學員須遵守本中心一切規定，本中心保留是否接受學員進修之權利。<br>
+                        10.年齡未滿20歲報名者，須經法定代理人同意後，本中心才接受報名；未獲法定代理人同意者，本中心得取消其報名資格。<br><br><br>
+                        <h5 class="py-3" id="title-two">LTTC/LTTC-LI 學員、課程網會員、活動及講座參與者個資使用說明【網路版】</h5>
+                        為配合「個人資料保護法」並保障您的權益，請詳細閱讀下列個資使用同意書所載內容：<br>
+                        1.蒐集個資目的：本人所提供的個資(見第 2 點)供「財團法人語言訓練測驗中心」 (以下簡稱 LTTC)及其附設新紀元語文短期補習班」(以下簡稱
+                        LTTC-LI)辦理課程、活動及講座相關業務、寄送相關資料、統計調查與分析、行銷及其他合於 LTTC/LTTC-LI 業務之用。若不完整提供個資將影響本人相關權益。<br>
+                        2.蒐集個資項目：身分證件字號、姓名、英文姓名拼音、通信地址、性別、出生
+                        年月日、聯絡電話、電子信箱、最高學歷、學校名稱、主修系所、服務單位、工作類別、於外語系國家居住時間、參加課程目的、開始學習外語時間、通過外語測驗種類及級數成績、照片、(就讀學校/年級、家長或法定代理人姓名—僅中學生或未滿
+                        20 歲者)、緊急聯絡人及相關資訊。<br>
+                        3.個人資料利用之期間、地區、對象及方式：<br>
+                        (1)期間：LTTC/LTTC-LI 得於辦理課程、活動及講座相關業務期間及 LTTC/LTTC-LI 存續期間存用本人之個資。<br>
+                        (2)地區：LTTC/LTTC-LI 得於台灣地區使用本人的個資。<br>
+                        (3)對象及方式：LTTC/LTTC-LI 得將本人之個資用於其內部之學員管理、行銷、統計調查與分析，及其他合於LTTC/LTTC-LI
+                        業務之需要，並將利用所提供之聯絡資訊通知相關課程、活動、講座及行銷等資訊。<br>
+                        (4)個人資料之權利：本人瞭解可依個人資料保護法第3條規定，通知LTTC/LTTC-LI 行使相關權利，並同意遵守 LTTC/LTTC-LI
+                        相關規定辦理上述個資之查詢、閱覽、複製、補充或更正。<br>
+                        4.本人確已詳閱並瞭解報名相關說明，亦會仔細閱讀及瞭解上課須知，並同意遵守各項規定事項。<br>
+                        5.本人瞭解所提供之個資，若經由檢舉或 LTTC/LTTC-LI 發現有不符真實身分或有冒用、盜用其他個資、資料不實等情事經查證屬實時，LTTC/LTTC-LI
+                        有權取消本人的當期或未來報名資格。<br><br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto my-3 text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        同意條款 </label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-10 py-4 d-flex justify-content-center border-bottom">
+                    <h3>購物車總計</h3><img src="public/images/svg/ic-shopping-bag.svg" class="ms-2">
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-4 col-10 d-flex justify-content-between py-3">
+                    <p>總價</p>
+                    <b>$16,640</b>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-3 col-12 text-center my-5">
+                    <a href="class_shoppingStep02.html" class="btn btn-add">選擇折扣方式</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row text-white justify-content-center">
+                    <div class="col-lg-5 col-12">
+                        <ul class="justify-content-lg-start justify-content-sm-center ps-sm-0">
+                            <li><a href="aboutus.html">關於我們</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy.html">隱私權聲明</a></li>
+                            <li><a href="comment.html">意見箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 ms-auto text-center pe-0">
+                        © Copyright 021 財團法人語言訓練測驗中心
+                    </div>
+                    <div class="col-auto text-center px-0">FOLLOW US
+                        <a href="#"><img src="public/images/svg/ic-fb-w.svg" class="px-1 cursor"></a>
+                        <a href="#"><img src="public/images/svg/ic-ig-w.svg" class="px-1 cursor"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    document.getElementById("divId").scrollIntoView();
+</script>
+
+</html>

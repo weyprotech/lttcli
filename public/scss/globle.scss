@@ -1,0 +1,35 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+//color
+$primary-color: #4f79ff;
+$secondary-color: #0bd2c8;
+$green-color: rgba(53, 140, 172, 1);
+$green-color-200: rgba(53, 140, 172, 0.2);
+$purple-color: rgba(182, 123, 255, 1);
+$purple-color-200: rgba(182, 123, 255, 0.2);
+
+//class shopping
+$tooltip-font-size: $font-size-sm;
+$tooltip-max-width: 200px;
+$tooltip-color: $white;
+$tooltip-bg: #0bd2c8;
+$tooltip-border-radius: $border-radius;
+$tooltip-opacity: 0.9;
+$tooltip-padding-y: $spacer / 4;
+$tooltip-padding-x: $spacer / 0;
+$tooltip-margin: 0;
+
+$tooltip-arrow-width: 0.8rem;
+$tooltip-arrow-height: 0.4rem;
+$tooltip-arrow-color: #0bd2c8;
