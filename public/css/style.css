@@ -13591,6 +13591,14 @@ nav .navbar-nav .nav-item .nav-link {
   color: #4f79ff;
 }
 
+.navbar-nav .navbar-nav-list ul li a {
+  color: #707071;
+}
+
+.navbar-nav .navbar-nav-list ul li a:hover {
+  color: #4f79ff;
+}
+
 .navbar-nav .nav-link-list:hover .navbar-nav-list {
   display: block;
 }
@@ -13648,6 +13656,10 @@ nav .navbar-nav .nav-item .nav-link {
 
 .rounded-0-10 {
   border-radius: 0 0 1rem 1rem;
+}
+
+.text-red {
+  color: red;
 }
 
 .text-dray-300 {
@@ -14806,9 +14818,12 @@ footer a:hover {
     height: 90px;
   }
   .item-bg {
-    font-size: 16px;
+    font-size: 14px;
     height: 84px;
     line-height: 82px;
+  }
+  .item-bg img {
+    width: 40px;
   }
   .item-bg .mt-lg-4 {
     margin-top: 0.5rem !important;
@@ -14868,6 +14883,10 @@ footer a:hover {
   .item-bg {
     height: 70px;
     line-height: 68px;
+    font-size: 13px;
+  }
+  .item-bg img {
+    width: 30px;
   }
   .item-bg .mt-lg-4 {
     margin-top: 0rem !important;
